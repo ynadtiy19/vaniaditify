@@ -30,7 +30,7 @@ FROM scratch
 
 COPY --from=build /runtime/ /
 COPY --from=build /app/bin/server /bin/server
-COPY --from=build /app/.env /
+
 
 # Comment the following line if you are not serving static files.
 COPY --from=build /app/public /public/
